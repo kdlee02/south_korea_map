@@ -62,8 +62,8 @@ gu_map.get_root().html.add_child(folium.Element(title_html))
 folium.Choropleth(
     geo_data=geo_data,
     data=df,
-    columns=('index', '출산율'),
-    key_on='feature.properties.index',
+    columns=('index', '출산율'), 
+    key_on='feature.properties.index', 
     fill_color='BuPu',
     fill_opacity=0.7,
     line_opacity=0.5,
@@ -80,10 +80,9 @@ folium.GeoJson(
         'fillColor': '#ffffff00', 'color': 'black', 'weight': 0.5, 'fillOpacity': 0.7
     },
     tooltip=folium.GeoJsonTooltip(
-        fields=['SIGUNGU_NM', '출산율'],
-        aliases=['행정구역: ', '출산율: '],
-        localize=True,
-        sticky=False
+        fields=['SIGUNGU_NM', '출산율'], # GeoJSON data 
+        aliases=['행정구역: ', '출산율: '], # names displayed in the tooltip
+        sticky=False # tooltip disappears once the mouse leaves the feature
     )
 ).add_to(gu_map)
 
