@@ -88,11 +88,11 @@ folium.GeoJson(
 ).add_to(gu_map)
 
 
-# Streamlit application
+# streamlit application
 st.title("한국 출산율 지도")
 
 folium_static(gu_map)
 
 # display dataFrame
 st.subheader("출산율 데이터")
-st.dataframe(df.iloc[:,0:2])  # Use st.table(df) if you prefer a static table view
+st.dataframe(df.iloc[:,0:2])  
