@@ -1,4 +1,4 @@
-# south_korea_map
+# South Korea Map
 
 visit this website: https://southkoreamap.streamlit.app/
 
